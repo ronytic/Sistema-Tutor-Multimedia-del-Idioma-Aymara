@@ -37,15 +37,15 @@ body{
 	width:160px;
 	border:#CCC 1px solid;
 	-moz-border-radius: 5px; -webkit-border-radius: 5px; -msie-border-radius: 5px;
-	border-bottom: 1px solid #adb96e;
+	border-bottom: 1px solid #5c8caa;
 }
 #formLogin input[type=submit]{
 	padding:10px;
 	font-weight:bolder;
-	border: 1px solid #adb96e;
+	border: 1px solid #5c8caa;
 	color:#FFF;
 	cursor:pointer;
-	background-color:#adb96e
+	background-color:#5c8caa
 }
 #formLogin{
 	color:#FFFFFF;	
@@ -65,7 +65,7 @@ background: -webkit-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
 background: -o-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
 background: -ms-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
 background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-border-bottom: 2px solid #adb96e;
+border-bottom: 2px solid #5c8caa;
 width: auto;
 }
 .cuerpo{
