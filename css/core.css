@@ -181,7 +181,7 @@ div.usuario{
 }
 /*Estilo Contenido*/
 
-.contenido{
+.contenido,.contenidot{
 	-moz-border-radius: 5px; -webkit-border-radius: 5px; -msie-border-radius: 5px;
 	font:13px/1.5 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;
 	padding:10px;
@@ -189,6 +189,11 @@ div.usuario{
 	border: #c7c7c7 1px solid;
 	margin:0 auto;
 	width:auto;
+}
+.contenidot{
+    padding:2px;
+    margin:0px 5px 10px 5px; 
+    text-align:center;   
 }
 .contenido fieldset,fieldset {
 	-moz-border-radius: 5px; -webkit-border-radius: 5px; -msie-border-radius: 5px;
