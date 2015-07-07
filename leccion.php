@@ -29,14 +29,14 @@ foreach($cont as $t){
             <?php
                 if($t['audio']!=""){
                     
-                ?><audio src="contenido/audio/<?php echo $t['audio']?>" controls></audio><?php
+                ?><audio src="contenido/audio/<?php echo $t['audio']?>" controls width="300"></audio><?php
                 }
 			?>
             <br>
             <?php
                 if($t['video']!=""){
                     
-                ?><video src="contenido/video/<?php echo $t['video']?>" controls></video><?php
+                ?><video src="contenido/video/<?php echo $t['video']?>" controls width="300" preload="auto"></video><?php
                 }
             ?>
         </div>
