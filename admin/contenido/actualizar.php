@@ -25,7 +25,7 @@ if($_FILES['audio']['name']!=""){
 }
 if($_FILES['video']['name']!=""){
 	@copy($_FILES['video']['tmp_name'],"../../contenido/video/".$_FILES['video']['name']);	
-	$valores["video"]="'".$_FILES['imagen']['name']."'";
+	$valores["video"]="'".$_FILES['video']['name']."'";
 }
 
 				$contenido->actualizar($valores,$id);
