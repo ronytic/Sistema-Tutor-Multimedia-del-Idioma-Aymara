@@ -30,6 +30,7 @@ $_SESSION['subm']=0;
             $(".textoinicio").html(data);    
             });
         });
+        $(".bimestre:eq(0)").click();
     })
 </script>
 <?php 
