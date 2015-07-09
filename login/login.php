@@ -7,8 +7,11 @@ if(!empty($_POST)){
 	include_once("../basedatos.php");
 	include_once("../class/usuarios.php");
 	include_once("../class/logusuarios.php");
+    include_once("../class/estudiante.php");
+    
 	$usuarios=new usuarios;
 	$logusuarios=new logusuarios;
+    $estudiante=new estudiante;
 	$url=$_POST['u'];
 	$u=explode($directory."/",$_POST['u']);
 	
@@ -32,7 +35,12 @@ if(!empty($_POST)){
 			$reg=$usuarios->loginUsuarios($usuario,$pass);
 			$reg=array_shift($reg);
 			$sw=1;
-		}else{
+		}elseif(ereg('^[0-9]{4,9}[0-9]$',$usuario)){
+			//Padre de familia
+			$reg=$estudiante->loginUsuarios($usuario,$pass);
+			$reg=array_shift($reg);
+			$Nivel=4;
+        }else{
 			header("Location:./?u=".$url.'&error=1');		
 		}
 		$codUsuario=$reg['codusuarios'];
