@@ -25,8 +25,10 @@ $submenu=new submenu;
     <?php }
     }
     ?>
+    <?php if($_SESSION['login']==0){?>
     <li><a href="<?php echo $folder; ?>admin.php" class="selected active">Evaluaciones</a></li>
     <li><a href="<?php echo $folder; ?>admin.php" class="selected active">Administración</a></li>
+    <?php }?>
 </ul>
 </div>
 </div>
