@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include_once("../login/check.php");
 if(!empty($_POST)):
 $narchivo="usuarios";
@@ -24,7 +24,7 @@ $valores=array("usuario"=>"'$usuario'",
 			);
 ${$narchivo}->insertar($valores);
 $codinsercion=${$narchivo}->last_id();
-$mensaje[]="EL USUARIO SE GUARDO CORRECTAMENTE";
+$mensaje[]="EL USUARIO SE CREO CORRECTAMENTE";
 $titulo="Confirmación de Guardado";
 $folder="../";
 include_once '../mensajeresultado.php';
