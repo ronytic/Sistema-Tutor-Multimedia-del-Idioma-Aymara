@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 include_once 'class/menu.php';
 include_once 'class/submenu.php';
 $menu=new menu;
@@ -39,7 +39,7 @@ $submenu=new submenu;
 		<span class="pequenol">Usuario:</span> <?php echo $us['usuario'];?> |
 		<span class="pequenol">Hora Acceso:</span> <?php echo $_SESSION['horasesion'];?> |
 		<a href="<?php echo $folder?>usuarios/cambiarp.php?id=<?php echo $_SESSION['idusuario']?>" class="enlaceusuario">Cambiar Contraseña</a>
-		<a href="<?php echo $folder ?>login/logout.php" class="botonplomo">Salir del Sistema</a>
+		<a href="<?php echo $folder ?>login/logout.php" class="botonplomo">Salir de Administración</a>
         <?php }else{
            ?>
            <marquee>UNIDAD EDUCATIVA DON BOSCO-EL PRADO</marquee>
