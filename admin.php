@@ -20,6 +20,15 @@ $_SESSION['subm']=0;
                $(".textoinicio").html(data);
             });
         });
+        $(document).on("click",".leccion",function(e){
+            e.preventDefault();
+            var h=$(this).attr("href");
+            $.post(h,function(data){
+                
+            $(".textoinicio").html(data);    
+            });
+        });
+        $(".bimestre:eq(0)").click();
     })
 </script>
 <?php 
