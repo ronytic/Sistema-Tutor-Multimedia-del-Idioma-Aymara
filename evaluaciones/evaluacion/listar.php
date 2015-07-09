@@ -14,7 +14,7 @@ $est=array_shift($estudiante->mostrar($_SESSION['idusuario']));
 
 
 $par=array_shift($paralelo->mostrar($est['codparalelo']));
-print_r($par);
+//print_r($par);
 include_once("../../funciones/funciones.php");
 include_once "../../cabecerahtml.php";
 ?>
