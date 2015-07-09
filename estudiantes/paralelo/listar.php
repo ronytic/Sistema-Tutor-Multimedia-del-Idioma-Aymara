@@ -1,6 +1,6 @@
 <?php
 include_once("../../login/check.php");
-$titulo="Listado de Temas";
+$titulo="Listado de Paralelos";
 $folder="../../";
 $bimestre=array("%"=>"Todos","1"=>"1","2"=>"2","3"=>"3","4"=>"4");
 

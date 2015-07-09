@@ -1,7 +1,7 @@
 <?php
 include_once '../../login/check.php';
 $folder="../../";
-$titulo="Modificar Tema";
+$titulo="Modificar Paralelo";
 $id=$_GET['id'];
 include_once '../../class/paralelo.php';
 $paralelo=new paralelo;
