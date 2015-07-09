@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 include_once '../../login/check.php';
 $folder="../../";
-$titulo="Registro de Nuevo Tema";
+$titulo="Nuevo Tema";
 $bimestre=array("1"=>"1","2"=>"2","3"=>"3","4"=>"4");
 include_once '../../funciones/funciones.php';
 include_once '../../cabecerahtml.php';

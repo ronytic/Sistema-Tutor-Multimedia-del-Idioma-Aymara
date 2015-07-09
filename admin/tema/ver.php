@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 include_once("../../impresion/pdf.php");
-$titulo="Datos de Tipo de Producto";
+$titulo="Imprime";
 $id=$_GET['id'];
 class PDF extends PPDF{
 	

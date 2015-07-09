@@ -18,7 +18,7 @@ if($_FILES['imagen']['name']!=""){
 	$valores["imagen"]="'".$_FILES['imagen']['name']."'";
 }
 				$temas->actualizar($valores,$id);
-				$mensaje[]="SUS DATOS SE GUARDARON CORRECTAMENTE";
+				$mensaje[]="LOS CAMBIOS SE GUARDARON CORRECTAMENTE";
 
 
 $titulo="Mensaje de Respuesta";
