@@ -37,10 +37,12 @@ $submenu=new submenu;
     
 	<div class="usuariocuerpo">
          <?php if($nivel){?>
-		<span class="pequenol">Nombre:</span> <?php echo $us['nombre'];?> | 
+		<?php if($nivel!=4){?>
+        <span class="pequenol">Nombre:</span> <?php echo $us['nombre'];?> | 
 		<span class="pequenol">Usuario:</span> <?php echo $us['usuario'];?> |
 		<span class="pequenol">Hora Acceso:</span> <?php echo $_SESSION['horasesion'];?> |
 		<a href="<?php echo $folder?>usuarios/cambiarp.php?id=<?php echo $_SESSION['idusuario']?>" class="enlaceusuario">Cambiar Contraseña</a>
+        <?php }?>
 		<a href="<?php echo $folder ?>login/logout.php" class="botonplomo">Salir de Administración</a>
         <?php }else{
            ?>
