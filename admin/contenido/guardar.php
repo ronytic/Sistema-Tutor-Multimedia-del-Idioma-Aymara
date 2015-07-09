@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include_once("../../login/check.php");
 if(!empty($_POST)):
 include_once("../../class/contenido.php");
@@ -12,7 +12,7 @@ if(($_FILES['curriculum']['type']=="application/pdf" || $_FILES['curriculum']['t
 	@copy($_FILES['curriculum']['tmp_name'],"../curriculum/".$_FILES['curriculum']['name']);
 }else{
 	//mensaje que no es valido el tipo de archivo	
-	$mensaje[]="Archivo no válido del curriculum. Verifique e intente nuevamente";
+	$mensaje[]="Archivo no válido. Verifique e intente nuevamente";
 }
 */
 if($_FILES['imagen']['name']!=""){
@@ -34,7 +34,7 @@ $valores=array(	"codtemas"=>"'$codtemas'",
 				"orden"=>"'$orden'",
 				);
 				$contenido->insertar($valores);
-				$mensaje[]="SUS DATOS SE GUARDARON CORRECTAMENTE";
+				$mensaje[]="LOS CAMBIOS SE GUARDARON CORRECTAMENTE";
 
 
 

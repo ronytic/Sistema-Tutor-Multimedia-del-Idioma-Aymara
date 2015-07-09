@@ -29,7 +29,7 @@ if($_FILES['video']['name']!=""){
 }
 
 				$contenido->actualizar($valores,$id);
-				$mensaje[]="SUS DATOS SE GUARDARON CORRECTAMENTE";
+				$mensaje[]="LOS CAMBIOS SE GUARDARON CORRECTAMENTE";
 
 
 $titulo="Mensaje de Respuesta";
