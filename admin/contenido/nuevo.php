@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 include_once '../../login/check.php';
 $folder="../../";
-$titulo="Registro de Nuevo Producto";
+$titulo="Nuevo contenido";
 
 include_once("../../class/temas.php");
 $temas=new temas;
