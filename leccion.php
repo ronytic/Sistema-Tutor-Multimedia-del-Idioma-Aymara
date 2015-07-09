@@ -22,7 +22,7 @@ foreach($cont as $t){
             <br>
             <?php
                 if($t['imagen']!=""){
-                ?><img src="contenido/imagen/<?php echo $t['imagen']?>" width="250"><?php	
+                ?><img src="contenido/imagen/<?php echo $t['imagen']?>" width="300"><?php	
                 }
             ?>
             <br>
