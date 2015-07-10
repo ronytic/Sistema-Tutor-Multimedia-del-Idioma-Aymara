@@ -154,7 +154,7 @@ function campos($texto,$nombre,$tipo,$valores="",$autofocus=0,$adicional=array()
 	}
 	switch($tipo){
 		case "textarea":{?>
-        	<textarea id="<?php echo $nombre;?>" name="<?php echo $nombre;?>" <?php echo $autofocus==1?'autofocus':'';?><?php foreach($adicional as $k=>$v){echo ' '.$k.'="'.$v.'"';}?> placeholder="Ingrese su <?php echo $texto;?>"><?php echo $valores?></textarea>
+        	<textarea id="<?php echo $nombre;?>" name="<?php echo $nombre;?>" <?php echo $autofocus==1?'autofocus':'';?><?php foreach($adicional as $k=>$v){echo ' '.$k.'="'.$v.'"';}?> ><?php echo $valores?></textarea>
 			<?php }break;
 			
 		case "select":{?>
@@ -173,7 +173,7 @@ function campos($texto,$nombre,$tipo,$valores="",$autofocus=0,$adicional=array()
 			
 		default:{
 			if(!is_array($valores))
-		?><input type="<?php echo $tipo;?>" id="<?php echo $nombre;?>" name="<?php echo $nombre;?>" <?php echo $autofocus==1?'autofocus':'';?><?php foreach($adicional as $k=>$v){echo ' '.$k.'="'.$v.'"';}?> placeholder="Ingrese su <?php echo $texto;?>" value="<?php echo $valores?>"/><?php
+		?><input type="<?php echo $tipo;?>" id="<?php echo $nombre;?>" name="<?php echo $nombre;?>" <?php echo $autofocus==1?'autofocus':'';?><?php foreach($adicional as $k=>$v){echo ' '.$k.'="'.$v.'"';}?> value="<?php echo $valores?>"/><?php
 		}break;		
 	}
 	?>
