@@ -21,7 +21,7 @@ include_once '../../cabecerahtml.php';
 						<td><?php campos("Nombre","nombre","text","",1,array("required"=>"required","size"=>50));?></td>
 					</tr>
 					<tr>
-						<td><?php campos("Descripción","descripcion","textarea","",1,array("rows"=>4,"cols"=>55));?></td>
+						<td><?php campos("Introducción","descripcion","textarea","",1,array("rows"=>4,"cols"=>55));?></td>
 					</tr>
                     <tr>
 						<td><?php campos("Imágen","imagen","file");?></td>

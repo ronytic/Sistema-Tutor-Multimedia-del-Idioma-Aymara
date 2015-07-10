@@ -7,7 +7,7 @@ if (!empty($_POST)) {
 
 	$temas=new temas;
 	$tip=$temas->mostrarTodo("bimestre LIKE '$bimestre' and nombre LIKE '%$nombre%'","nombre,orden");
-	$titulo=array("nombre"=>"Nombre","descripcion"=>"Descripción","bimestre"=>"Bimestre","orden"=>"Orden");
+	$titulo=array("nombre"=>"Nombre","descripcion"=>"Introducción","bimestre"=>"Bimestre","orden"=>"Orden");
 	listadoTabla($titulo,$tip,1,"modificar.php","eliminar.php","");
 }
 ?>
