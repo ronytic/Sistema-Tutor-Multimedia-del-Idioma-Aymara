@@ -14,9 +14,21 @@ if(($_FILES['curriculum']['type']=="application/pdf" || $_FILES['curriculum']['t
 	$mensaje[]="Archivo no válido. Verifique e intente nuevamente";
 }
 */
-/*if($_FILES['imagen']['name']!=""){
-	@copy($_FILES['imagen']['tmp_name'],"../../imagenes/temas/".$_FILES['imagen']['name']);	
-}*/
+if($_FILES['imagen1']['name']!=""){
+	@copy($_FILES['imagen1']['tmp_name'],"../../contenido/evaluacion/".$_FILES['imagen1']['name']);	
+}
+if($_FILES['imagen2']['name']!=""){
+	@copy($_FILES['imagen1']['tmp_name'],"../../contenido/evaluacion/".$_FILES['imagen1']['name']);	
+}
+if($_FILES['imagen3']['name']!=""){
+	@copy($_FILES['imagen1']['tmp_name'],"../../contenido/evaluacion/".$_FILES['imagen1']['name']);	
+}
+if($_FILES['imagen4']['name']!=""){
+	@copy($_FILES['imagen1']['tmp_name'],"../../contenido/evaluacion/".$_FILES['imagen1']['name']);	
+}
+if($_FILES['imagen5']['name']!=""){
+	@copy($_FILES['imagen1']['tmp_name'],"../../contenido/evaluacion/".$_FILES['imagen1']['name']);	
+}
 $valores=array(	
                 "codparalelo"=>"'$codparalelo'",
 				"bimestre"=>"'$bimestre'",
@@ -26,6 +38,11 @@ $valores=array(
                 "opcion3"=>"'$opcion3'",
                 "opcion4"=>"'$opcion4'",
                 "opcion5"=>"'$opcion5'",
+                "opcion1"=>"'".$_FILES['imagen1']['name']."'",
+                "opcion2"=>"'".$_FILES['imagen2']['name']."'",
+                "opcion3"=>"'".$_FILES['imagen3']['name']."'",
+                "opcion4"=>"'".$_FILES['imagen4']['name']."'",
+                "opcion5"=>"'".$_FILES['imagen5']['name']."'",
                 "correcta"=>"'$correcta'",
 				);
 				$preguntas->insertar($valores);

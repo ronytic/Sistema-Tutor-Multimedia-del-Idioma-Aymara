@@ -16,6 +16,30 @@ $valores=array(
                 "opcion5"=>"'$opcion5'",
                 "correcta"=>"'$correcta'",
 				);
+                
+ if($_FILES['imagen1']['name']!=""){
+     @copy($_FILES['imagen1']['tmp_name'],"../../contenido/evaluacion/".$_FILES['imagen1']['name']);	
+	$valores['imagen1']="'".$_FILES['imagen1']['name']."'";
+}
+if($_FILES['imagen2']['name']!=""){
+     @copy($_FILES['imagen2']['tmp_name'],"../../contenido/evaluacion/".$_FILES['imagen2']['name']);	
+	$valores['imagen2']="'".$_FILES['imagen2']['name']."'";
+}
+if($_FILES['imagen3']['name']!=""){
+     @copy($_FILES['imagen3']['tmp_name'],"../../contenido/evaluacion/".$_FILES['imagen3']['name']);	
+	$valores['imagen3']="'".$_FILES['imagen3']['name']."'";
+}
+if($_FILES['imagen4']['name']!=""){
+     @copy($_FILES['imagen4']['tmp_name'],"../../contenido/evaluacion/".$_FILES['imagen4']['name']);	
+	$valores['imagen4']="'".$_FILES['imagen4']['name']."'";
+}
+if($_FILES['imagen5']['name']!=""){
+     @copy($_FILES['imagen5']['tmp_name'],"../../contenido/evaluacion/".$_FILES['imagen5']['name']);	
+	$valores['imagen5']="'".$_FILES['imagen5']['name']."'";
+}               
+            
+           // print_r($valores);    
+                
 				$preguntas->actualizar($valores,$id);
 				$mensaje[]="LOS CAMBIOS SE GUARDARON CORRECTAMENTE";
 
