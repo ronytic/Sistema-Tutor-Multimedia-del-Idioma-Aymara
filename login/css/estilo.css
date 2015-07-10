@@ -1,7 +1,7 @@
 /* CSS Document */
 body{
 	background-image:url(../../imagenes/fondo.png);
-
+    background: radial-gradient(ellipse at center,rgba(223,229,233,1) 2%,rgba(223,229,233,1) 2%,rgba(178,192,202,1) 100%);
 }
 #formLogin{
 	/*background-image:url(../../imagenes/body.jpg);*/
@@ -24,6 +24,7 @@ body{
 	background : -webkit-linear-gradient(top, rgb(1, 134, 191) 00%, rgb(15, 109, 164) 99%);*/
 	background:#eeede8;
 	background:#FFF;
+    /*background-color: rgba(17,32,58,0.43);*/
 }
 #formLogin label{
 	color:#CCC;
@@ -59,14 +60,14 @@ body{
 
 
 	background: #fefefe;
-background: -moz-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #eee9f0));
-background: -webkit-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-background: -o-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-background: -ms-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-border-bottom: 2px solid #5c8caa;
-width: auto;
+    background: -moz-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #eee9f0));
+    background: -webkit-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+    background: -o-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+    background: -ms-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+    background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+    border-bottom: 2px solid #5c8caa;
+    width: auto;
 }
 .cuerpo{
 	border:#CCC 1px solid;
@@ -75,13 +76,15 @@ width: auto;
 }
 .rojoC{
 	-moz-border-radius: 5px; -webkit-border-radius: 5px; -msie-border-radius: 5px;
-	background-color:#b94a48;
+	background-color:rgba(208,44,60,0.82);
 	color:#FFFFFF;
 	padding:5px;
+    text-align:center;
 }
 .naranjaC{
 	-moz-border-radius: 5px; -webkit-border-radius: 5px; -msie-border-radius: 5px;
 	background-color:#f89406;
 	color:#FFFFFF;
 	padding:5px;
+    text-align:center;
 }
