@@ -29,13 +29,19 @@ $est=array_shift($estudiante->mostrar($_SESSION['idusuario']));
     foreach($est as $e){$i++;
         $par=array_shift($paralelo->mostrar($e['codparalelo']));
     
+    
+        $img1=$e['imagen1']!=""?'<br><img src="../../contenido/evaluacion/'.$e['imagen1'].'" width="100">':'';
+        $img2=$e['imagen2']!=""?'<br><img src="../../contenido/evaluacion/'.$e['imagen2'].'" width="100">':'';
+        $img3=$e['imagen3']!=""?'<br><img src="../../contenido/evaluacion/'.$e['imagen3'].'" width="100">':'';
+        $img4=$e['imagen4']!=""?'<br><img src="../../contenido/evaluacion/'.$e['imagen4'].'" width="100">':'';
+        $img5=$e['imagen5']!=""?'<br><img src="../../contenido/evaluacion/'.$e['imagen5'].'" width="100">':'';
         $datos[$i]['codpreguntas']=$e['codpreguntas'];
         $datos[$i]['pregunta']=$e['pregunta'];
-        $datos[$i]['opcion1']='<center>'.$e['opcion1'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="1"></center>';
-        $datos[$i]['opcion2']='<center>'.$e['opcion2'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="2"></center>';
-        $datos[$i]['opcion3']='<center>'.$e['opcion3'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="3"></center>';
-        $datos[$i]['opcion4']='<center>'.$e['opcion4'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="4"></center>';
-        $datos[$i]['opcion5']='<center>'.$e['opcion5'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="5"></center>';
+        $datos[$i]['opcion1']='<center>'.$e['opcion1'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="1">'.$img1.'</center>';
+        $datos[$i]['opcion2']='<center>'.$e['opcion2'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="2">'.$img2.'</center>';
+        $datos[$i]['opcion3']='<center>'.$e['opcion3'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="3">'.$img3.'</center>';
+        $datos[$i]['opcion4']='<center>'.$e['opcion4'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="4">'.$img4.'</center>';
+        $datos[$i]['opcion5']='<center>'.$e['opcion5'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="5">'.$img5.'</center>';
         
         
     }
