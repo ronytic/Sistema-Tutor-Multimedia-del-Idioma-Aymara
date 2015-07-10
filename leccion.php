@@ -12,7 +12,12 @@ $tem=$temas->mostrarTodo("codtemas=".$d);
 $tem=array_shift($tem);;
 ?>
 <div class="titulo"><?php echo $tem['nombre']?></div>
+<?php if($tem['descripcion']!=""){?>
+<fieldset>
+<p><?php echo $tem['descripcion']?></p>
+</fieldset>
 <?php
+}
 foreach($cont as $t){
     ?>
     <div style="width:335px;  display: inline;
