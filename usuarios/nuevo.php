@@ -13,36 +13,33 @@ include_once $folder.'cabecerahtml.php';
         <form action="guardar.php" method="post" enctype="multipart/form-data">
         <table class="tablareg">
             <tr>
-                <td><?php campos("Usuario","usuario","text","",1,array("required"=>"required","size"=>30));?></td>
-                <td><?php campos("Contraseña","password","text","",0,array("required"=>"required","size"=>30));?></td>
+                <td><?php campos("Usuario","usuario","text","",1,array("required"=>"required","size"=>20));?></td>
+                <td><?php campos("Contraseña","password","text","",0,array("required"=>"required","size"=>20));?></td>
+                <td><?php campos("Nivel de Usuario","nivel","select",array("2"=>"Administrador","3"=>"Docente"));?></td>
             </tr>
             <tr>
-                <td><?php campos("Nombres","nombres","text","",0,array("required"=>"required","size"=>30));?></td>
-                <td><?php campos("Apellido Paterno","paterno","text","",0,array("required"=>"required","size"=>30));?></td>
+                <td><?php campos("Nombres","nombres","text","",0,array("required"=>"required","size"=>20));?></td>
+                <td><?php campos("Apellido Paterno","paterno","text","",0,array("required"=>"required","size"=>20));?></td>
+                <td><?php campos("Apellido Materno","materno","text","",0,array("required"=>"required","size"=>20));?></td>
             </tr>
             <tr>
-            	<td><?php campos("Apellido Materno","materno","text","",0,array("required"=>"required","size"=>30));?></td>
-                <td><?php campos("CI","ci","text","",0,array("size"=>30));?></td>
+            	
+                <td><?php campos("CI","ci","text","",0,array("size"=>20));?></td>
+                <td><?php campos("Dirección","direccion","text","",0,array("required"=>"required","size"=>20));?></td>
+                <td><?php campos("Teléfono","telefono","text","",0,array("size"=>20));?></td>
             </tr>
             <tr>
-            	<td><?php campos("Dirección","direccion","text","",0,array("required"=>"required","size"=>30));?></td>
-                <td><?php campos("Teléfono","telefono","text","",0,array("size"=>30));?></td>
+            	
             </tr>
             <tr>
-            	<td><?php campos("Celular","celular","text","",0,array("required"=>"required","size"=>30));?></td>
-            </tr>
-            <tr>
-            	<td colspan="2"><?php campos("Foto","foto","file","",0,array("size"=>30));?></td>
-            </tr>
-            <tr>
-                <td><?php campos("Email","email","text","",0,array("size"=>30));?></td>
-                <td><?php campos("Nivel","nivel","select",array("2"=>"Administrador","3"=>"Docente","4"=>"Alumno"));?></td>
+            	<td><?php campos("Celular","celular","text","",0,array("required"=>"required","size"=>20));?></td>
+                <td><?php campos("Email","email","text","",0,array("size"=>20));?></td>
+                
             </tr>
             
             <tr>
-                <td colspan="2"><?php campos("Observación","observacion","textarea","","",array("rows"=>5,"cols"=>50,"size"=>30));?></td>
-            </tr>
-            <tr><td><?php campos("Guardar Usuario","guardar","submit");?></td><td></td></tr>
+                <td colspan="2"><?php campos("Observación","observacion","textarea","","",array("rows"=>5,"cols"=>50,"size"=>20));?></td>
+                <td><?php campos("Guardar Usuario","guardar","submit");?></td><td></td></tr>
         </table>
         </form>
     </fieldset>
