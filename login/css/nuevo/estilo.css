@@ -1,0 +1,76 @@
+body{
+    background-color:#295e92;  
+    background-image: url(../../../imagenes/fondo5.jpg);
+    background-size:cover
+}
+.container{
+    background:url(../../imagenes/fondo.jpg) bottom;
+    width:960px;    
+    margin:0 auto;
+    padding:10px;
+    height:500px;
+    display:block;
+    box-shadow:0px 0px 50px #000000 ;
+    position:relative;
+}
+
+.login{
+    position:absolute;
+    background-color:rgba(255,255,255,0.4);
+    width:300px;
+    padding:20px 20px 0px 20px;
+    border-radius:15px;
+    right:10px;
+}
+.login input[type=text],.login input[type=password]{
+    padding:10px;
+    border-radius:5px;
+    background-color:#fff;
+    border:#D4D4D4 2px solid;    
+}
+.login input[type=text]:focus,.login input[type=password]:focus{
+    border:#295e92 2px solid;  
+}
+.login h2{
+    color:#464646 ;
+    text-align:center;
+    border-bottom:#808080 1px solid;    
+}
+.login table td{
+    padding:5px; 
+    text-align:right;   
+}
+.login input[type=submit]{
+    border:#1b5991 1px solid;
+    /* Chrome 10+,Safari */
+    background : -webkit-linear-gradient(top, rgb(40, 120, 191) 00%, rgb(20, 93, 157) 100%);
+    
+    /* Firefox 4+ */ 
+    background : -moz-linear-gradient(top, rgb(40, 120, 191) 00%, rgb(20, 93, 157) 100%);
+    
+    /* Opera */
+    background : -o-linear-gradient(top, rgb(40, 120, 191) 00%, rgb(20, 93, 157) 100%);
+    
+    /* IE 10+ */
+    background : -ms-linear-gradient(top, rgb(40, 120, 191) 00%, rgb(20, 93, 157) 100%); 
+    
+    /* W3C */
+    background : -linear-gradient(top, rgb(40, 120, 191) 00%, rgb(20, 93, 157) 100%);
+    color:#FFF;
+    padding:10px;
+    border-radius:5px;
+}
+.container .audio{
+    position:absolute;
+    bottom:10px;    
+}
+.container .login-title{
+    font-size:30pt;
+    font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    color:#FFF;
+    text-shadow:3px 3px 0px #4F4F4F;
+}
+.container .login-title:first-letter {
+    color: #48A4FF;
+    font-weight:bold;
+}
