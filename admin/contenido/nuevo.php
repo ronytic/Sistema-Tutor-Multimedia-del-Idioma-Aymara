@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include_once '../../login/check.php';
 $folder="../../";
 $titulo="Nuevo contenido";
