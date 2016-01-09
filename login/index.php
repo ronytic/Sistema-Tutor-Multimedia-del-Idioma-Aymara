@@ -11,15 +11,15 @@ include_once("../funciones/funciones.php");
 <title>.::Acceso al Sistema | <?php echo $title;?>::.</title>
 <link href="../css/960/960.css" type="text/css" rel="stylesheet" media="all" />
 <link href="css/estilo.css" type="text/css" rel="stylesheet" media="all" />
-<link href="css/nuevo/style.css" type="text/css" rel="stylesheet" media="all" />
+<link href="css/nuevo/estilo.css" type="text/css" rel="stylesheet" media="all" />
 <link rel="shortcut icon" href="../imagenes/favicon.ico" />
 <script type="text/javascript" language="javascript" src="../js/jquery.js"></script>
 <script type="text/javascript" language="javascript" src="js/login.js"></script>
 </head>
 <body>
-<section class="container">
+<div class="container">
     <div class="login">
-      <h1>Acceso al Sistema</h1>
+      <h2>Acceso al Sistema</h2>
             <?php
             if($_GET['incompleto']){
             ?>
@@ -34,17 +34,28 @@ include_once("../funciones/funciones.php");
             ?>
       <form action="login.php" method="post" id="login">
          <input type="hidden" name="u" value="<?php echo $_GET['u'];?>" />
-        <p><input type="text" name="usuario" value="" placeholder="Introdusca su usuario" id="usuario"></p>
-        <p><input type="password" name="pass" value="" placeholder="Introdusca su contraseña" id="pass"></p>
-        
-        <p class="submit"><input type="submit" name="Ingresar" value="Ingresar"></p>
+         <table>
+            <tr>
+                <td>Usuario</td>
+                <td><input type="text" name="usuario" value="" placeholder="Introdusca su Usuario" id="usuario"></td>
+            </tr>
+            <tr>
+                <td>Contraseña</td>
+                <td><input type="password" name="pass" value="" placeholder="Introdusca su Contraseña" id="pass"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="Ingresar" value="Ingresar"></td>
+            </tr>
+         </table>
       </form>
     </div>
 
-    <div class="login-help">
-      <p>Tutor Multimedia del Idioma Aymara</p>
+    <div class="login-title">
+      <p><?php echo str_replace("  ","<br>",$title)?></p>
     </div>
-  </section>
+    <div class="audio"><audio src="../audio/bienvenido.mp3" controls="controls" ></audio></div>
+  </div>
 
   
 </body>
