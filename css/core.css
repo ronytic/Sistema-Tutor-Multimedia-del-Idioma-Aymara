@@ -15,6 +15,8 @@ body{
 	background-color:#d9d9d9;
 	/*background-color:#000000;*/
     background: #0ca3d2;
+    background-image:url(../imagenes/fondo5.jpg);
+    background-size:cover;
 }
 #contenedor{
 	background-color: #0f6da4;
@@ -204,6 +206,9 @@ div.usuario{
 	border: #c7c7c7 1px solid;
 	margin:0 auto;
 	width:auto;
+    /*background-color:#FF8600;*/
+    /*background-image:url(../imagenes/fondo8.jpg);*/
+    /*background-size:cover*/
 }
 .contenidot{
     padding:2px;
@@ -248,14 +253,21 @@ div.usuario{
 	background-color:#ff8a24;
 	background:#FFF;
 	background: #fefefe;
-background: -moz-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #eee9f0));
-background: -webkit-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-background: -o-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-background: -ms-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
-border-bottom: 2px solid #e1b900;
-width: auto;
+    background: -moz-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #eee9f0));
+    background: -webkit-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+    background: -o-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+    background: -ms-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+    background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+    border-bottom: 2px solid #e1b900;
+    width: auto;
+
+background-image:url(../imagenes/cuadro/titulo.jpg);
+border-radius:10px 10px 0px 0px;
+border-radius:5px;
+color:#000;
+text-shadow:0px 0px 5px #FFF;
+
 }
 .cuerpo{
 	border:#CCC 1px solid;
