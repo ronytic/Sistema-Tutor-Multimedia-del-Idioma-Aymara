@@ -1,5 +1,5 @@
 <?php
-$title="Tutor Multimedia del Idioma Aymara";
+$title='Tutor Multimedia  "Idioma Aymara"';
 $siglas="";
 $directory="tutor";//ej:carp/ sin el "/"
 $url="http://localhost/";//ej:http:"localhost/"
