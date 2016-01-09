@@ -1,8 +1,5 @@
 <?php
-session_start();
-$revisar=0;
 include_once("login/check.php");
-//print_r($_SESSION);
 $titulo="Inicio";
 $_SESSION['idmenu']=0;
 $_SESSION['subm']=0;
@@ -31,7 +28,12 @@ $_SESSION['subm']=0;
             $(".textoinicio").html(data);    
             });
         });
-        $(".bimestre:eq(0)").click();
+        //$(".bimestre:eq(0)").click();
+        $(document).on("click",".tituloc",function(){
+             var t=$(this).attr("rel");
+             //alert(t);
+             $(".contenidoc[rel="+t+"]").slideDown("slow");
+        });
     })
 </script>
 <?php 
@@ -55,9 +57,12 @@ include_once("cabecera.php");?>
         <img src="imagenes/bimestres/4.jpg" width="200"/>
     </div>
 </div>
-<div class="grid_9">
+<div class="grid_6">
     <div class="contenido textoinicio">
     	
     </div>
+</div>
+<div class="grid_3">
+    
 </div>
 <?php include_once("piepagina.php");?>
