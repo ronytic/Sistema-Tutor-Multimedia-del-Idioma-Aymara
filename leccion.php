@@ -23,8 +23,9 @@ foreach($cont as $t){
     <div style="width:335px;  display: inline;
   float: left;">
         <div class="contenidot">
-            <div class="titulo"><?php    echo $t['nombre'];?></div>
+            <div class="titulo tituloc" rel="<?php echo $t['codcontenido']?>"><?php    echo $t['nombre'];?></div>
             <br>
+            <div class="contenidoc" rel="<?php echo $t['codcontenido']?>" style="display:none">
             <?php
                 if($t['imagen']!=""){
                 ?><img src="contenido/imagen/<?php echo $t['imagen']?>" width="300"><?php	
@@ -44,6 +45,7 @@ foreach($cont as $t){
                 ?><video src="contenido/video/<?php echo $t['video']?>" controls width="300" preload="auto"></video><?php
                 }
             ?>
+            </div>
         </div>
     </div>
     <?php
