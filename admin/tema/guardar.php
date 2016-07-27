@@ -17,11 +17,15 @@ if(($_FILES['curriculum']['type']=="application/pdf" || $_FILES['curriculum']['t
 if($_FILES['imagen']['name']!=""){
 	@copy($_FILES['imagen']['tmp_name'],"../../imagenes/temas/".$_FILES['imagen']['name']);	
 }
+if($_FILES['video']['name']!=""){
+	@copy($_FILES['video']['tmp_name'],"../../contenido/temas/".$_FILES['video']['name']);	
+}
 $valores=array(	"bimestre"=>"'$bimestre'",
                 "nombre"=>"'$nombre'",
 				"descripcion"=>"'$descripcion'",
                 
                 "imagen"=>"'".$_FILES['imagen']['name']."'",
+                "video"=>"'".$_FILES['video']['name']."'",
                 "orden"=>"'$orden'",
 				
 				);

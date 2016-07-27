@@ -27,6 +27,9 @@ include_once '../../cabecerahtml.php';
 						<td><?php campos("Imágen","imagen","file");?></td>
 					</tr>
                     <tr>
+						<td><?php campos("Video","video","file");?></td>
+					</tr>
+                    <tr>
 						<td><?php campos("Orden","orden","text");?></td>
 					</tr>
 					<tr><td><?php campos("Guardar","guardar","submit");?></td></tr>

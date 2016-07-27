@@ -17,6 +17,10 @@ if($_FILES['imagen']['name']!=""){
 	@copy($_FILES['imagen']['tmp_name'],"../../imagenes/temas/".$_FILES['imagen']['name']);	
 	$valores["imagen"]="'".$_FILES['imagen']['name']."'";
 }
+if($_FILES['video']['name']!=""){
+	@copy($_FILES['video']['tmp_name'],"../../contenido/temas/".$_FILES['video']['name']);	
+	$valores["video"]="'".$_FILES['video']['name']."'";
+}
 				$temas->actualizar($valores,$id);
 				$mensaje[]="LOS CAMBIOS SE GUARDARON CORRECTAMENTE";
 

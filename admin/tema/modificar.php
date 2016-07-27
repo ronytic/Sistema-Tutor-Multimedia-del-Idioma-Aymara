@@ -39,6 +39,16 @@ include_once '../../cabecerahtml.php';
                         </td>
 					</tr>
                     <tr>
+						<td><?php campos("Video","video","file");?>
+                        <br>
+                        <?php
+							if($tem['imagen']!=""){
+							?><br><a href="../../contenido/temas/<?php echo $tem['video']?>" target="_blank" class="boton2">Ver Video</a><?php	
+							}
+						?>
+                        </td>
+					</tr>
+                    <tr>
 						<td><?php campos("Orden","orden","text",$tem['orden']);?></td>
 					</tr>
 					<tr><td><?php campos("Guardar","guardar","submit");?></td></tr>
