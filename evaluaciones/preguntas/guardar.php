@@ -14,6 +14,10 @@ if(($_FILES['curriculum']['type']=="application/pdf" || $_FILES['curriculum']['t
 	$mensaje[]="Archivo no válido. Verifique e intente nuevamente";
 }
 */
+ if($_FILES['preguntaaudio']['name']!=""){
+     @copy($_FILES['preguntaaudio']['tmp_name'],"../../contenido/evaluacion/".$_FILES['preguntaaudio']['name']);	
+	$valores['preguntaaudio']="'".$_FILES['preguntaaudio']['name']."'";
+}
 if($_FILES['imagen1']['name']!=""){
 	@copy($_FILES['imagen1']['tmp_name'],"../../contenido/evaluacion/".$_FILES['imagen1']['name']);	
 }
@@ -33,6 +37,7 @@ $valores=array(
                 "codparalelo"=>"'$codparalelo'",
 				"bimestre"=>"'$bimestre'",
                 "pregunta"=>"'$pregunta'",
+                "preguntaaudio"=>"'".$_FILES['preguntaaudio']['name']."'",
                 "opcion1"=>"'$opcion1'",
                 "opcion2"=>"'$opcion2'",
                 "opcion3"=>"'$opcion3'",

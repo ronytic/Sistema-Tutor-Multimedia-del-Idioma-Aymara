@@ -29,7 +29,9 @@ include_once '../../cabecerahtml.php';
 						<td colspan="1"><?php campos("Bimestre","bimestre","select",$bimestre,0,"",$pre['bimestre']);?></td>
 					</tr>
 					<tr>
-						<td colspan="3"><?php campos("Pregunta","pregunta","text",$pre['pregunta'],1,array("required"=>"required","size"=>100));?></td>
+						<td colspan="3"><?php campos("Pregunta","pregunta","text",$pre['pregunta'],1,array("required"=>"required","size"=>100));?><br>
+                        <?php campos("Pregunta Audio","preguntaaudio","file","",0,array("accept"=>"audio/*"));?>
+                        </td>
 					</tr>
                     <tr>
 						<td><?php campos("Respuesta Nº 1","opcion1","text",$pre['opcion1'],1,array("required"=>"required","size"=>30));?>
