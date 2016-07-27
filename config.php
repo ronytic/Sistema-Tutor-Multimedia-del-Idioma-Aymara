@@ -1,8 +1,8 @@
 <?php
-$title='Tutor Multimedia  "Idioma Aymara"';
+$title='Tutor Multimedias   "Idioma Aymara"';
 $siglas="";
 $directory="tutor";//ej:carp/ sin el "/"
-$url="http://localhost/";//ej:http:"localhost/"
+$url="http://11.1.2.31/";//ej:http:"localhost/"
 $lema2="";
 $lema='Tutoria de Calidad';
 $direccion="El Prado";
