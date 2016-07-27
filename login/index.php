@@ -54,7 +54,7 @@ include_once("../funciones/funciones.php");
     <div class="login-title">
       <p><?php echo str_replace("  ","<br>",$title)?></p>
     </div>
-    <div class="audio"><audio src="../audio/bienvenido.mp3" controls="controls" ></audio></div>
+    <div class="audio"><audio src="../audio/bienvenido.mp3" controls="controls" autoplay="autoplay"></audio></div>
   </div>
 
   
