@@ -36,7 +36,10 @@ $est=array_shift($estudiante->mostrar($_SESSION['idusuario']));
         $img4=$e['imagen4']!=""?'<br><img src="../../contenido/evaluacion/'.$e['imagen4'].'" width="100">':'';
         $img5=$e['imagen5']!=""?'<br><img src="../../contenido/evaluacion/'.$e['imagen5'].'" width="100">':'';
         $datos[$i]['codpreguntas']=$e['codpreguntas'];
-        $datos[$i]['pregunta']=$e['pregunta'];
+        $datos[$i]['pregunta']=$e['pregunta']."<br>";
+        if($e['preguntaaudio']!=""){
+            $datos[$i]['pregunta'].='<audio src="../../contenido/evaluacion/'.$e['preguntaaudio'].'" controls>'.'</audio>';
+        }
         $datos[$i]['opcion1']='<center>'.$e['opcion1'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="1">'.$img1.'</center>';
         $datos[$i]['opcion2']='<center>'.$e['opcion2'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="2">'.$img2.'</center>';
         $datos[$i]['opcion3']='<center>'.$e['opcion3'].'<br><input type="radio" name="r['.$e[codpreguntas].']" value="3">'.$img3.'</center>';
