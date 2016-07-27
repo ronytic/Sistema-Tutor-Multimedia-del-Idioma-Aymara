@@ -1,5 +1,5 @@
 </head>
-<body>
+<body style="background-image:url(<?php echo $folder;?>imagenes/fondo<?php echo rand(2,8)?>.jpg);">
 <div class="container_12" > 
 	<div class="grid_12">
     	<div class="banner">
