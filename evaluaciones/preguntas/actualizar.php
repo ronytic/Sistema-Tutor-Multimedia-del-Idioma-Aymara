@@ -16,7 +16,11 @@ $valores=array(
                 "opcion5"=>"'$opcion5'",
                 "correcta"=>"'$correcta'",
 				);
-                
+ if($_FILES['preguntaaudio']['name']!=""){
+     @copy($_FILES['preguntaaudio']['tmp_name'],"../../contenido/evaluacion/".$_FILES['preguntaaudio']['name']);	
+	$valores['preguntaaudio']="'".$_FILES['preguntaaudio']['name']."'";
+}
+           
  if($_FILES['imagen1']['name']!=""){
      @copy($_FILES['imagen1']['tmp_name'],"../../contenido/evaluacion/".$_FILES['imagen1']['name']);	
 	$valores['imagen1']="'".$_FILES['imagen1']['name']."'";
