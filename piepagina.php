@@ -2,7 +2,7 @@
     <div class="clear"></div>
     <div class="grid_12">
     
-	<div class="usuariocuerpo">
+	<?php /*<div class="usuariocuerpo">
          <?php if($nivel){?>
 		<?php if($nivel!=4){?>
         <span class="pequenol">Nombre:</span> <?php echo $us['nombre'];?> | 
@@ -16,13 +16,13 @@
            <marquee>UNIDAD EDUCATIVA DON BOSCO-EL PRADO</marquee>
            <?php 
         }?>
-	</div>
+	</div>*/?>
     
 </div>
 <div class="clear"></div>
 	<div class="grid_12"> 
-		<div id="piepag">
-            <div class="mensaje">
+		<div id="piepag ">
+            <div class="mensaje titulo2">
                <?php echo $direccion?> | Todos los Derechos reservados <?php echo date("Y")?> 
             </div>
 		</div> 
